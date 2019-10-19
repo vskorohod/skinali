@@ -92,6 +92,10 @@ img {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button-fitting {
   color: #507fe1;
   background-color: #fff;
@@ -150,6 +154,9 @@ img {
 }
 
 @media (max-width: 576px) {
+  .button {
+    font-size: 10px;
+  }
   .button-o {
     font-size: 12px;
   }
@@ -163,6 +170,7 @@ img {
 
 .navbar {
   position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -376,6 +384,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 900px;
 }
 
@@ -443,6 +453,12 @@ img {
     width: 100%;
   }
   .form__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .form__checkbox:first-child {
     margin-bottom: 20px;
   }
 }
@@ -633,6 +649,85 @@ img {
   .blog-list__card {
     margin-right: 30px;
     margin-left: 30px;
+  }
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-block__card {
+  margin-bottom: 10px;
+}
+
+.price-card {
+  position: relative;
+  background-color: #fff;
+}
+
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card__title {
+  margin: 0;
+}
+
+.price-card__cost {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.price-card__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-card__button {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  padding-top: 0;
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price-card:hover .price-card__button {
+  z-index: 99;
+  bottom: -80px;
+}
+
+@media (max-width: 991px) {
+  .price-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block__card {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .price-block__card {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
