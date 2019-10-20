@@ -1,0 +1,113 @@
+.footer
+  background-color: #282828
+  color: #fff
+  &-block
+    display: flex
+    justify-content: space-between
+    padding: 40px 0
+
+.company
+  &__title
+    margin: 0
+    +bold
+    font-size: 18px
+    text-transform: uppercase
+  &__subtitle
+    margin: 0
+    margin-bottom: 20px
+    font-size: 14px
+  &__copyright
+    margin: 0
+    font-size: 14px
+    color: #767676
+
+.payment
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 32px
+  &__item
+    margin: 0
+    margin-right: 30px;
+
+.footer-contact
+  text-align: right
+  &__phone
+    margin: 0
+    +bold
+    font-size: 18px
+    &-link
+      color: #fff
+      text-transform: uppercase
+      text-decoration: none
+  &__mail
+    margin: 20px 0 15px 0
+    &-link
+      font-size: 14px
+      color: #fff
+
+.social
+  //display: flex
+  margin-left: auto;
+  max-width: 105px
+  &__link
+    position: relative
+    margin: 0
+    width: 25px
+    height: 25px
+    font-size: 1px
+    color: rgba(0, 0, 0, 0)
+    &:nth-child(2)
+      margin: 0 30px
+    &--twitter::after
+      content: ""
+      position: absolute
+      width: 25px
+      height: 25px
+      top: -13px
+      left: -22px
+      background-image: url(../img/footer/icon-twitter.png)
+      background-repeat: no-repeat
+      background-position: center
+    &--facebook::after
+      content: ""
+      position: absolute
+      width: 25px
+      height: 25px
+      top: -13px
+      left: -22px
+      background-image: url(../img/footer/icon-facebook.png)
+      background-repeat: no-repeat
+      background-position: center
+    &--vkontakte::after
+      content: ""
+      position: absolute
+      width: 25px
+      height: 25px
+      top: -13px
+      left: -22px
+      background-image: url(../img/footer/icon-vkontakte.png)
+      background-repeat: no-repeat
+      background-position: center
+      
+@media screen and (max-width: 991px)
+  .footer
+    text-align: center
+    &-block
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+    &-item
+      align-self: center
+      flex-basis: 100%
+    &-contact
+      text-align: center
+
+  .payment
+    margin: 30px 0
+
+  
+  
+
+
+    

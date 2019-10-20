@@ -1058,4 +1058,165 @@ img {
         flex-basis: 100%;
   }
 }
+
+.footer {
+  background-color: #282828;
+  color: #fff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.company__title {
+  margin: 0;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.company__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.company__copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #767676;
+}
+
+.payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+}
+
+.payment__item {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact__phone {
+  margin: 0;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 18px;
+}
+
+.footer-contact__phone-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-contact__mail {
+  margin: 20px 0 15px 0;
+}
+
+.footer-contact__mail-link {
+  font-size: 14px;
+  color: #fff;
+}
+
+.social {
+  margin-left: auto;
+  max-width: 105px;
+}
+
+.social__link {
+  position: relative;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 1px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.social__link:nth-child(2) {
+  margin: 0 30px;
+}
+
+.social__link--twitter::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -13px;
+  left: -22px;
+  background-image: url(../img/footer/icon-twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--facebook::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -13px;
+  left: -22px;
+  background-image: url(../img/footer/icon-facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--vkontakte::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -13px;
+  left: -22px;
+  background-image: url(../img/footer/icon-vkontakte.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-item {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer-contact {
+    text-align: center;
+  }
+  .payment {
+    margin: 30px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
