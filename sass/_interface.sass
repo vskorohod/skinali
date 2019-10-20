@@ -12,6 +12,7 @@ img
     +bold
     text-align: center
     text-transform: uppercase
+
 .button-o
   padding: 17px 22px
   border: 2px solid $primary
@@ -53,9 +54,12 @@ img
   border: 1px solid #dddddd
 
 .checkbox
-  display: none
+  position: absolute;
+  left: -9999px;
   &:checked + label::before
     background: $primary
+  &:focus + label::before
+    border: 1px solid $primary
   &-label
     display: flex
     align-items: center
@@ -68,6 +72,7 @@ img
       height: 30px
       margin-right: 20px
       border: 1px solid #dddddd
+      
 
 @media (max-width: 576px)
   .button

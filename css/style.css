@@ -124,11 +124,16 @@ img {
 }
 
 .checkbox {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 .checkbox:checked + label::before {
   background: #507fe1;
+}
+
+.checkbox:focus + label::before {
+  border: 1px solid #507fe1;
 }
 
 .checkbox-label {
