@@ -3,12 +3,15 @@
   &-block
     margin-top: -200px
     padding: 80px
-    background-image: url('../img/form/form-bg.jpg')
     background-repeat: no-repeat
     background-position: center right
     background-color: #ffffff
     background-size: contain
     box-shadow: 0 15px 25px rgba(0, 0 ,0, 0.1)
+    &--calc-bg
+      background-image: url('../img/form/form-bg.jpg')
+    &--price-bg
+      background-image: url('../img/form/form-bg2.jpg')
   &__title
     margin-bottom: 20px
     font-size: 25px
@@ -16,6 +19,7 @@
     +bold
   &__subtitle
     display: block
+    max-width: 800px
     margin-bottom: 48px
     font-size: 21px
 .form
@@ -25,8 +29,7 @@
     flex-wrap: wrap
     max-width: 900px
     &:nth-child(2)
-      margin: 25px 0
-    
+      margin: 30px 0
   &__label
     display: block
     margin-bottom: 15px
@@ -41,13 +44,18 @@
   &__button
     width: 100%
     height: 80px
+  &__policy
+    display: inline-block
+    margin-left: 45px
 
 @media (max-width: 1199px)
   .offer
     &-block
       background-position: center right -120px
+    &__subtitle
+      max-width: 750px;
 
-@media (max-width: 768px)
+@media (max-width: 991px)
   .offer
     &-block
       padding: 40px
@@ -66,6 +74,9 @@
       width: 100%
     &__input
       margin-bottom: 20px
+    &__policy
+      margin-top: 20px
+      margin-left: 0
         
 @media (max-width: 430px)
    .form

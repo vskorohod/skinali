@@ -1,0 +1,31 @@
+.production
+  &-block
+    display: flex
+    justify-content: center
+    &__textblock
+      max-width: 500px
+      margin-left: 75px
+      font-size: 20px
+    &__text
+      margin: 0
+      margin-bottom: 20px;
+    &__image
+      width: 370px
+
+@media (max-width: 991px)
+  .production
+    &-block
+      &__textblock
+        margin-left: 35px
+      &__text
+        font-size: 16px
+
+@media (max-width: 768px)
+  .production
+    &-block
+      flex-wrap: wrap
+      &__textblock
+        margin-left: 0
+        margin-top: 35px
+      &__text
+        text-align: justify
