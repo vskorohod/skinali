@@ -52,6 +52,48 @@ img
   height: 80px
   padding-left: 28px
   border: 1px solid #dddddd
+   
+input[type="checkbox"]
+  display: none
+  &:checked + label::before
+    background-color: $primary
+    
+.select
+  position: relative
+  width: 100%
+  height: 80px
+  border: 1px solid #dddddd
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 20px
+    width: 20px
+    transform: translateY(-50%)
+    height: 20px
+    background: url('../img/form/form-select.png') no-repeat center 
+  &:hover
+    cursor: pointer
+  &_checked
+    line-height: 80px
+    padding-left: 30px
+  &__dropdown
+    display: none
+    position: absolute
+    top: 78px
+    width: 100%
+    margin: 0
+    padding: 0
+    background-color: #fff
+    border: 1px solid #dddddd
+    list-style: none
+    &_open
+      display: block
+  &__option
+    padding: 20px
+    &:hover
+      background-color: $bg-secondary
+
 
 .checkbox
   position: absolute;
