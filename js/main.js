@@ -29,4 +29,14 @@ $(window).load(function() {
     return false;
   });
   $('input[type="tel"]').mask("+7 (999) 999-99-99");
+  // Download map after scrolling
+  var reviews = $('.reviews');
+  var reviewsTop = reviews.offset().top;
+  $(window).bind('scroll', function() {
+    var windowTop = $(this).scrollTop();
+    if (windowTop > reviewsTop) {
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7fa6b7170cff7666aa0c645cb993de1e36153d8d7c01576313b0a4890d7af48a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>')
+      $(window).unbind('scroll')
+    }
+  });
 }); 
